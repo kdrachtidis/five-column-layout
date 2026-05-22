@@ -10,7 +10,7 @@ services:
     volumes:
       - ./docs/demo-empty:/usr/share/nginx/html
     restart: always
-    container_name: column-layout-frontend-empty
+    container_name: frontend-empty
   frontend-content:
     build:
       context: ./docs/demo-content
@@ -20,4 +20,4 @@ services:
     volumes:
       - ./docs/demo-content:/usr/share/nginx/html
     restart: always
-    container_name: column-layout-frontend-content
+    container_name: frontend-content
