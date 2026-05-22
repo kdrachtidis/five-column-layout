@@ -1,6 +1,6 @@
 /* Large Dekstop ------------------------------------------------------------ */
 
-@media only screen and (min-width: 1681px) and (orientation: landscape) {
+@media only screen and (min-width: 1441px) and (orientation: landscape) {
     /* Sections - Main Container -------------------------------------------- */
     #main-container.TTTT {
         width: 51%;
@@ -298,7 +298,7 @@
 
 /* Normal Dekstop ----------------------------------------------------------- */
 
-@media only screen and (min-width: 1281px) and (max-width: 1680px) and (orientation: landscape) {
+@media only screen and (min-width: 1025px) and (max-width: 1440px) and (orientation: landscape) {
     /* Sections - Main Container -------------------------------------------- */
     #main-container.TTTT,
     #main-container.FTTT,
@@ -436,7 +436,7 @@
 
 /* Small Dekstop ------------------------------------------------------------ */
 
-@media only screen and (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
+@media only screen and (min-width: 961px) and (max-width: 1024px) and (orientation: landscape) {
     /* Sections - Main Container -------------------------------------------- */
     #main-container.TTTT,
     #main-container.FTTT,
@@ -536,7 +536,7 @@
 
 /* Really Small Dekstop ----------------------------------------------------- */
 
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (max-width: 960px) and (orientation: landscape) {
     /* Sections - Main Container -------------------------------------------- */
     #main-container {
         width: 100%;
