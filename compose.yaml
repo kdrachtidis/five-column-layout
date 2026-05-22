@@ -1,23 +1,13 @@
-name: column-layout
+name: five-column-layout
 
 services:
-  frontend-empty:
+  demo:
     build:
-      context: ./docs/demo-empty
+      context: ./docs
       dockerfile: Dockerfile
     ports:
       - "8080:80"
     volumes:
-      - ./docs/demo-empty:/usr/share/nginx/html
+      - ./docs:/usr/share/nginx/html
     restart: always
-    container_name: frontend-empty
-  frontend-content:
-    build:
-      context: ./docs/demo-content
-      dockerfile: Dockerfile
-    ports:
-      - "8081:80"
-    volumes:
-      - ./docs/demo-content:/usr/share/nginx/html
-    restart: always
-    container_name: frontend-content
+    container_name: five-column-layout-demo
