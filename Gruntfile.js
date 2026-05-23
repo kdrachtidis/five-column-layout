@@ -57,5 +57,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['jshint', 'concat', /*'qunit',*/ 'uglify', 'copy', 'watch']);
+    grunt.registerTask('test', ['qunit']);
+    grunt.registerTask('build', ['jshint', 'concat', 'uglify', 'copy']);
+    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'copy', 'watch']);
 };
