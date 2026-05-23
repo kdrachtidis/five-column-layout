@@ -36,21 +36,14 @@ module.exports = function (grunt) {
         },
         copy: {
             main: {
-                files: [
-                    {
-                        src: ['dist/<%= pkg.name %>.min.js'],
-                        dest: 'docs/demo-content/<%= pkg.name %>.min.js'
-                    },
-                    {
-                        src: ['dist/<%= pkg.name %>.min.js'],
-                        dest: 'docs/demo-empty/<%= pkg.name %>.min.js'
-                    }
-                ]
+                files: {
+                    'docs/<%= pkg.name %>.min.js': 'dist/<%= pkg.name %>.min.js'
+                }
             }
         },
         watch: {
             files: ['<%= jshint.files %>'],
-            tasks: ['jshint', 'concat','uglify'],
+            tasks: ['jshint', 'concat', 'uglify', 'copy'],
             options: {
                 reload: true
             }
